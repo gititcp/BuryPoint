@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
-group = 'com.github.Lvluffy'
+group = 'com.github.gititcp'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -46,7 +46,8 @@ dependencies {
     provided "com.android.support:support-v4:$rootProject.supportVersion"
     /**项目结构*/
     /*通用网络*/
-    provided 'com.github.Lvluffy:GeneralNetwork:1.0.2'
+    api 'com.github.gititcp.GeneralNetwork:apilib:1.0.6'
+    api 'com.github.gititcp.GeneralNetwork:mvplib:1.0.6'
     /*通用工具*/
-    provided 'com.github.Lvluffy:GeneralUtils:1.0.2'
+    api 'com.github.gititcp:GeneralUtils:1.1.2'
 }

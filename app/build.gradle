@@ -11,6 +11,11 @@ android {
         versionCode rootProject.ext.versionCode
         versionName rootProject.ext.versionName
     }
+    /**编译选项*/
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
     /**构建类型-配置*/
     buildTypes {
         debug {
@@ -42,10 +47,6 @@ dependencies {
     /*butterknife*/
     compile 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
-    /*通用网络*/
-    compile 'com.github.Lvluffy:GeneralNetwork:1.0.2'
-    /*通用工具*/
-    compile 'com.github.Lvluffy:GeneralUtils:1.0.2'
     /**burypointlib*/
     compile project(':burypointlib')
 }
